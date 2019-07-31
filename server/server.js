@@ -7,6 +7,9 @@ const sessionMiddleware = require('./modules/session-middleware');
 
 const passport = require('./strategies/user.strategy');
 
+// Requiring dotenv 
+require('dotenv').config();
+
 // Route includes
 const userRouter = require('./routes/user.router');
 const secretsRouter = require('./routes/secrets.router');
